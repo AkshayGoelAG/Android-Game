@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_google_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AF8964">
+
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:contentDescription="@null"
+        android:src="@drawable/restart" />
+
+    <View
+        android:id="@+id/bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view"
+        android:background="@drawable/landscape1" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:text="@string/score_0"
+        android:textStyle="bold" />
+
+    <com.yalantis.starwars.TilesFrameLayout
+        android:id="@+id/tiles_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sw_animationDuration="1500"
+        app:sw_numberOfTilesX="35">
+
+        <ImageView
+            android:id="@+id/firstCloud"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@null"
+            android:src="@drawable/clouds_new" />
+    </com.yalantis.starwars.TilesFrameLayout>
+
+    <ImageView
+        android:id="@+id/secondCloud"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@null"
+        android:src="@drawable/clouds_new" />
+
+    <ImageView
+        android:id="@+id/tree2"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/view"
+        android:contentDescription="@null"
+        android:src="@drawable/cactus_new" />
+
+    <ImageView
+        android:id="@+id/tree1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/view"
+        android:contentDescription="@null"
+        android:src="@drawable/cactus_new" />
+
+    <ImageView
+        android:id="@+id/object"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/view"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@null" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:background="#AF8964" />
+
+</RelativeLayout>
